@@ -1,4 +1,4 @@
-# RHCSA - 0.2
+# RHCSA - 0.3
  
 ## Preparing the environment
 - Install Virtual Box
@@ -28,22 +28,42 @@
 - Create User
  
 ### Partitioning
-- / - 10 GiB
-- /boot - 1 GB
-- /swap - 1 GiB
-- /home - 1 TiB
-- /var - 50 GiB
+	/ - 10 GiB
+	/boot - 1 GB
+	/swap - 1 GiB
+	/home - 1 TiB
+	/var - 50 GiB
  
-##VIM
-modes
-i - insert
-a - abend 
-o - insert line below
-Esc - back to command mode
-:wq - write and quite
+## VIM
+### modes
+	i - insert
+	a - abend 
+	o - insert line below
+	Esc - back to command mode
+	:wq - write and quite
  
-editing
-dd - delete line
+### editing
+	dd - delete line
+	yy - copy line
+	pp - paste line
+ 
+### aministrative
+	U - undo
+	:q! - quit without save
+	CTRL R - redo
+	
+## Shell
+	history - See list of used commands
+	!32 - Execute command number 32
+	CTRL R <word> - Search for the last command with this word
+	tab + tab - Show all possibilities
+	tab - Autocomplete
+	ls host* - list all files starting with host
+	ls ?ost - list files lile most, host, post
+	ls [hm]ost - list files like most and host
+	ls [!hm]ost - list only post
+	ls -d /etc/a* - list all files start with a but not the content of the directory
+	touch most post host - crete 3 empty files
  
 ## Objectives
  
@@ -220,6 +240,9 @@ dd - delete line
  
 UUID - Universal Unique Identifier
 NAT = Network Address Translation
+ 
+ 
+ 
  
  
  
