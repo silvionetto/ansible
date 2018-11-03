@@ -14,14 +14,14 @@
       count: 1
     tasks:
     - name: Launch the new EC2 Instance
-      local_actiton: ec2
-                     group={{ security_group }}
-                     instance_type={{ instance_type }}
-                     image={{ image }}
-                     wait=true
-                     region={{ region }}
-                     keypair={{ keypair }}
-                     count={{ count }}
+      local_action: ec2
+                    group={{ security_group }}
+                    instance_type={{ instance_type }}
+                    image={{ image }}
+                    wait=true
+                    region={{ region }}
+                    keypair={{ keypair }}
+                    count={{ count }}
       register: ec2
     - name: Add the newly created EC2 instance(s) to the local host group (located inside the directory)
       local_action: lineinfile
