@@ -1,0 +1,10 @@
+all:
+  hosts:
+    silvionetto.com:
+  children:
+    dbservers:
+      hosts:
+        db.silvionetto.com:
+    webservers:
+      hosts:
+        jenkins.silvionetto.com:
